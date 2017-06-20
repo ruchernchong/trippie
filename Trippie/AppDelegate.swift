@@ -1,11 +1,5 @@
-//
-//  AppDelegate.swift
-//  Trippie
-//
-//  Created by Ru Chern Chong on 20/6/17.
-//  Copyright © 2017 Ru Chern Chong. All rights reserved.
-//
-
+import GoogleMaps
+import GooglePlaces
 import UIKit
 
 @UIApplicationMain
@@ -15,7 +9,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        var keys: NSDictionary?
+
+        if let path = Bundle.main.path(forResource: "keys", ofType: "plist") {
+            keys = NSDictionary(contentsOfFile: path)
+        }
+
+        if let dict = keys {
+            let GMSSERVICES_KEY = dict["GMSSERVICES_KEY"] as? String
+            let GMSPLACESCLIENT_KEY = dict["GMSPLACESCLIENT_KEY"] as? String
+
+            GMSServices.provideAPIKey(GMSSERVICES_KEY!)
+            GMSPlacesClient.provideAPIKey(GMSPLACESCLIENT_KEY!)
+        }
+
         return true
     }
 
