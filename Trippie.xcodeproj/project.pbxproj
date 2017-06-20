@@ -14,6 +14,7 @@
 		39879E071EF90C4200C2AED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39879E061EF90C4200C2AED5 /* Assets.xcassets */; };
 		39879E0A1EF90C4200C2AED5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39879E081EF90C4200C2AED5 /* LaunchScreen.storyboard */; };
 		39879E151EF90C4200C2AED5 /* TrippieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39879E141EF90C4200C2AED5 /* TrippieTests.swift */; };
+		39F1619F1EF90DD5002E9FA6 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39F1619E1EF90DD5002E9FA6 /* keys.plist */; };
 		6C5C0FC65EDDCB4B9778047B /* Pods_TrippieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6663C5331AD76918B70DA3C8 /* Pods_TrippieTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		39879E101EF90C4200C2AED5 /* TrippieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrippieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39879E141EF90C4200C2AED5 /* TrippieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrippieTests.swift; sourceTree = "<group>"; };
 		39879E161EF90C4200C2AED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39F1619E1EF90DD5002E9FA6 /* keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
 		4BF7F27827CAE10AEFF8358F /* Pods-Trippie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trippie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trippie/Pods-Trippie.release.xcconfig"; sourceTree = "<group>"; };
 		6663C5331AD76918B70DA3C8 /* Pods_TrippieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrippieTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77E9FE1E6AB645702C1536E9 /* Pods_Trippie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trippie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,7 @@
 		39879DF31EF90C4200C2AED5 = {
 			isa = PBXGroup;
 			children = (
+				39F1619E1EF90DD5002E9FA6 /* keys.plist */,
 				39879DFE1EF90C4200C2AED5 /* Trippie */,
 				39879E131EF90C4200C2AED5 /* TrippieTests */,
 				39879DFD1EF90C4200C2AED5 /* Products */,
@@ -219,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39F1619F1EF90DD5002E9FA6 /* keys.plist in Resources */,
 				39879E0A1EF90C4200C2AED5 /* LaunchScreen.storyboard in Resources */,
 				39879E071EF90C4200C2AED5 /* Assets.xcassets in Resources */,
 				39879E051EF90C4200C2AED5 /* Main.storyboard in Resources */,
@@ -549,6 +553,7 @@
 				39879E1B1EF90C4200C2AED5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39879E1C1EF90C4200C2AED5 /* Build configuration list for PBXNativeTarget "TrippieTests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +562,7 @@
 				39879E1E1EF90C4200C2AED5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
