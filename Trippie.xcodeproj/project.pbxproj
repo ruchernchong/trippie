@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F6A1DCB6646FF50240E7A7E /* Pods_Trippie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E9FE1E6AB645702C1536E9 /* Pods_Trippie.framework */; };
 		39879E001EF90C4200C2AED5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39879DFF1EF90C4200C2AED5 /* AppDelegate.swift */; };
 		39879E021EF90C4200C2AED5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39879E011EF90C4200C2AED5 /* ViewController.swift */; };
 		39879E051EF90C4200C2AED5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39879E031EF90C4200C2AED5 /* Main.storyboard */; };
 		39879E071EF90C4200C2AED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39879E061EF90C4200C2AED5 /* Assets.xcassets */; };
 		39879E0A1EF90C4200C2AED5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39879E081EF90C4200C2AED5 /* LaunchScreen.storyboard */; };
 		39879E151EF90C4200C2AED5 /* TrippieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39879E141EF90C4200C2AED5 /* TrippieTests.swift */; };
+		6C5C0FC65EDDCB4B9778047B /* Pods_TrippieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6663C5331AD76918B70DA3C8 /* Pods_TrippieTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,12 @@
 		39879E101EF90C4200C2AED5 /* TrippieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrippieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39879E141EF90C4200C2AED5 /* TrippieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrippieTests.swift; sourceTree = "<group>"; };
 		39879E161EF90C4200C2AED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BF7F27827CAE10AEFF8358F /* Pods-Trippie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trippie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trippie/Pods-Trippie.release.xcconfig"; sourceTree = "<group>"; };
+		6663C5331AD76918B70DA3C8 /* Pods_TrippieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrippieTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77E9FE1E6AB645702C1536E9 /* Pods_Trippie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trippie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA53710447FB1CA4373628F8 /* Pods-TrippieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrippieTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrippieTests/Pods-TrippieTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC3324B4D7BD95B53CD55FF3 /* Pods-Trippie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trippie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trippie/Pods-Trippie.debug.xcconfig"; sourceTree = "<group>"; };
+		CF89C136D862C71CCFBBB17B /* Pods-TrippieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrippieTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrippieTests/Pods-TrippieTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F6A1DCB6646FF50240E7A7E /* Pods_Trippie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C5C0FC65EDDCB4B9778047B /* Pods_TrippieTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				39879DFE1EF90C4200C2AED5 /* Trippie */,
 				39879E131EF90C4200C2AED5 /* TrippieTests */,
 				39879DFD1EF90C4200C2AED5 /* Products */,
+				926E7A1BAC9BA3E5F0CB85D1 /* Pods */,
+				C01345372FED36DC2DD920A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,26 @@
 			path = TrippieTests;
 			sourceTree = "<group>";
 		};
+		926E7A1BAC9BA3E5F0CB85D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC3324B4D7BD95B53CD55FF3 /* Pods-Trippie.debug.xcconfig */,
+				4BF7F27827CAE10AEFF8358F /* Pods-Trippie.release.xcconfig */,
+				AA53710447FB1CA4373628F8 /* Pods-TrippieTests.debug.xcconfig */,
+				CF89C136D862C71CCFBBB17B /* Pods-TrippieTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C01345372FED36DC2DD920A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77E9FE1E6AB645702C1536E9 /* Pods_Trippie.framework */,
+				6663C5331AD76918B70DA3C8 /* Pods_TrippieTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39879E191EF90C4200C2AED5 /* Build configuration list for PBXNativeTarget "Trippie" */;
 			buildPhases = (
+				0F8FC2F5AB77707FB6C3C91E /* [CP] Check Pods Manifest.lock */,
 				39879DF81EF90C4200C2AED5 /* Sources */,
 				39879DF91EF90C4200C2AED5 /* Frameworks */,
 				39879DFA1EF90C4200C2AED5 /* Resources */,
+				F71CEF71F354CA2E3453A28A /* [CP] Embed Pods Frameworks */,
+				EF0A17373434076C269D662F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39879E1C1EF90C4200C2AED5 /* Build configuration list for PBXNativeTarget "TrippieTests" */;
 			buildPhases = (
+				5C100C7E0C3D2A8F609C0A0C /* [CP] Check Pods Manifest.lock */,
 				39879E0C1EF90C4200C2AED5 /* Sources */,
 				39879E0D1EF90C4200C2AED5 /* Frameworks */,
 				39879E0E1EF90C4200C2AED5 /* Resources */,
+				2208B2D2E640608CC460227E /* [CP] Embed Pods Frameworks */,
+				76A8FCAEFC52D35FDB67349D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,6 +233,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F8FC2F5AB77707FB6C3C91E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2208B2D2E640608CC460227E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrippieTests/Pods-TrippieTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C100C7E0C3D2A8F609C0A0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		76A8FCAEFC52D35FDB67349D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrippieTests/Pods-TrippieTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF0A17373434076C269D662F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trippie/Pods-Trippie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F71CEF71F354CA2E3453A28A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trippie/Pods-Trippie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		39879DF81EF90C4200C2AED5 /* Sources */ = {
@@ -341,6 +472,7 @@
 		};
 		39879E1A1EF90C4200C2AED5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC3324B4D7BD95B53CD55FF3 /* Pods-Trippie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 96NH8UVPYB;
@@ -354,6 +486,7 @@
 		};
 		39879E1B1EF90C4200C2AED5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BF7F27827CAE10AEFF8358F /* Pods-Trippie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 96NH8UVPYB;
@@ -367,6 +500,7 @@
 		};
 		39879E1D1EF90C4200C2AED5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA53710447FB1CA4373628F8 /* Pods-TrippieTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -382,6 +516,7 @@
 		};
 		39879E1E1EF90C4200C2AED5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF89C136D862C71CCFBBB17B /* Pods-TrippieTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
