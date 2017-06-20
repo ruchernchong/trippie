@@ -1,0 +1,5 @@
+language: swift
+os: osx
+osx_image: xcode8.3
+notifications:
+  email: false
