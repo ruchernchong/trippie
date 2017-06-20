@@ -152,3 +152,4 @@ Carthage/Build
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 .idea/
+keys.plist
