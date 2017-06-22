@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Trippie-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Trippie" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,11 +21,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="eS9-Mu-V60">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="5vE-pG-Ity"/>
-                        <barButtonItem key="rightBarButtonItem" title="Map Type" id="bUK-oQ-MMZ"/>
+                    <navigationItem key="navigationItem" title="Trippie" id="eS9-Mu-V60">
+                        <barButtonItem key="rightBarButtonItem" title="Map Type" id="bUK-oQ-MMZ">
+                            <connections>
+                                <action selector="buttonMapType:" destination="BYZ-38-t0r" id="5bs-ET-nxs"/>
+                            </connections>
+                        </barButtonItem>
+                        <connections>
+                            <outlet property="rightBarButtonItem" destination="bUK-oQ-MMZ" id="NcT-I5-JQf"/>
+                        </connections>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -38,7 +45,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9bS-AB-Vsr" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qOa-Im-lAL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qOa-Im-lAL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
