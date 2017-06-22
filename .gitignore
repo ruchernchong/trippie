@@ -153,3 +153,4 @@ Carthage/Build
 /*.gcno
 .idea/
 keys.plist
+*.gpx
