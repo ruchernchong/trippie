@@ -13,6 +13,10 @@
 		39879E071EF90C4200C2AED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39879E061EF90C4200C2AED5 /* Assets.xcassets */; };
 		39879E0A1EF90C4200C2AED5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39879E081EF90C4200C2AED5 /* LaunchScreen.storyboard */; };
 		39879E151EF90C4200C2AED5 /* TrippieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39879E141EF90C4200C2AED5 /* TrippieTests.swift */; };
+		398CB6651EFD0EF6002CB1AB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398CB6641EFD0EF6002CB1AB /* MapViewController.swift */; };
+		398CB6691EFD1686002CB1AB /* ItienaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398CB6681EFD0FF6002CB1AB /* ItienaryTableViewController.swift */; };
+		398CB66A1EFD16A5002CB1AB /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398CB6661EFD0FF6002CB1AB /* Places.swift */; };
+		398CB66B1EFD16B5002CB1AB /* ItienaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398CB6671EFD0FF6002CB1AB /* ItienaryTableViewCell.swift */; };
 		399F46801EFA776D00FE34B4 /* CT Hub.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 399F467F1EFA776D00FE34B4 /* CT Hub.gpx */; };
 		39F1619F1EF90DD5002E9FA6 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39F1619E1EF90DD5002E9FA6 /* keys.plist */; };
 /* End PBXBuildFile section */
@@ -38,6 +42,10 @@
 		39879E101EF90C4200C2AED5 /* TrippieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrippieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39879E141EF90C4200C2AED5 /* TrippieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrippieTests.swift; sourceTree = "<group>"; };
 		39879E161EF90C4200C2AED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		398CB6641EFD0EF6002CB1AB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		398CB6661EFD0FF6002CB1AB /* Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
+		398CB6671EFD0FF6002CB1AB /* ItienaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItienaryTableViewCell.swift; sourceTree = "<group>"; };
+		398CB6681EFD0FF6002CB1AB /* ItienaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItienaryTableViewController.swift; sourceTree = "<group>"; };
 		399F467F1EFA776D00FE34B4 /* CT Hub.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "CT Hub.gpx"; sourceTree = "<group>"; };
 		39F1619E1EF90DD5002E9FA6 /* keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
 		4BF7F27827CAE10AEFF8358F /* Pods-Trippie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trippie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trippie/Pods-Trippie.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +97,10 @@
 		39879DFE1EF90C4200C2AED5 /* Trippie */ = {
 			isa = PBXGroup;
 			children = (
+				398CB6671EFD0FF6002CB1AB /* ItienaryTableViewCell.swift */,
+				398CB6681EFD0FF6002CB1AB /* ItienaryTableViewController.swift */,
+				398CB6661EFD0FF6002CB1AB /* Places.swift */,
+				398CB6641EFD0EF6002CB1AB /* MapViewController.swift */,
 				39879DFF1EF90C4200C2AED5 /* AppDelegate.swift */,
 				39879E011EF90C4200C2AED5 /* ViewController.swift */,
 				39879E031EF90C4200C2AED5 /* Main.storyboard */,
@@ -183,11 +195,13 @@
 					39879DFB1EF90C4200C2AED5 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 96NH8UVPYB;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					39879E0F1EF90C4200C2AED5 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 96NH8UVPYB;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 39879DFB1EF90C4200C2AED5;
 					};
@@ -241,13 +255,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Trippie-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2208B2D2E640608CC460227E /* [CP] Embed Pods Frameworks */ = {
@@ -271,13 +288,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrippieTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		76A8FCAEFC52D35FDB67349D /* [CP] Copy Pods Resources */ = {
@@ -301,9 +321,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Trippie/Pods-Trippie-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -316,9 +340,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Trippie/Pods-Trippie-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -332,7 +359,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				398CB66A1EFD16A5002CB1AB /* Places.swift in Sources */,
+				398CB6691EFD1686002CB1AB /* ItienaryTableViewController.swift in Sources */,
+				398CB66B1EFD16B5002CB1AB /* ItienaryTableViewCell.swift in Sources */,
 				39879E021EF90C4200C2AED5 /* ViewController.swift in Sources */,
+				398CB6651EFD0EF6002CB1AB /* MapViewController.swift in Sources */,
 				39879E001EF90C4200C2AED5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,7 +511,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruchern.Trippie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -495,7 +527,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruchern.Trippie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -510,7 +543,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruchern.TrippieTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trippie.app/Trippie";
 			};
 			name = Debug;
@@ -526,7 +560,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruchern.TrippieTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trippie.app/Trippie";
 			};
 			name = Release;

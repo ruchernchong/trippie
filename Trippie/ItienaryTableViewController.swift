@@ -82,29 +82,27 @@ class ItienaryTableViewController: UITableViewController {
         }
     }
 
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        super.prepare(for: segue, sender: sender)
-//
-//        switch (segue.identifier ?? "") {
-//        case "AddItem":
-//            os_log("Adding a new meal.", log: OSLog.default, type: .debug)
-//        case "ShowDetail":
-//            guard let mealDetailViewController = segue.destination as? MealViewController else {
-//                fatalError("Unexpected destination: \(segue.destination)")
-//            }
-//
-//            guard let selectedMealCell = sender as? MealTableViewCell else {
-//                fatalError("Unexpected sender: \(sender)")
-//            }
-//
-//            guard let indexPath = tableView.indexPath(for: selectedMealCell) else {
-//                fatalError("The selected cell is not being displayed by the table")
-//            }
-//
-//            let selectedMeal = meals[indexPath.row]
-//            mealDetailViewController.meal = selectedMeal
-//        default:
-//            fatalError("Unexpected Segue Identifier; \(segue.identifier)")
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+
+        switch (segue.identifier ?? "") {
+        case "ShowPlaceOnMap":
+            guard let placeDetailViewController = segue.destination as? MapViewController else {
+                fatalError()
+            }
+
+            guard let selectedPlaceCell = sender as? ItienaryTableViewCell else {
+                fatalError()
+            }
+
+            guard let indexPath = tableView.indexPath(for: selectedPlaceCell) else {
+                fatalError()
+            }
+
+            let selectedPlace = places[indexPath.row]
+            placeDetailViewController.places = selectedPlace
+        default:
+            fatalError()
+        }
+    }
 }
